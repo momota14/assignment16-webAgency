@@ -4,7 +4,7 @@ import menuList from "@/utils/menuList";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import MobileDrawer from "./mobileDrawer";
+import MobileDrawer from "./MobileDrawer";
 import NextTopLoader from "nextjs-toploader";
 import useWindowDimensions from "@/hook/getWindowDimensions";
 

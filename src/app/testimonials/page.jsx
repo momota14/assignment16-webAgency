@@ -3,7 +3,7 @@ import PageHeader from '@/components/PageHeader'
 import PageLayout from '@/components/PageLayout';
 import PageTitle from "@/components/PageTitle";
 import Subscribe from '@/components/Subscribe'
-import TestimonialsCard from '@/components/testimonialsCard';
+import TestimonialsCard from '@/components/TestimonialsCard';
 import React from 'react'
 
 const page = () => {
