@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 
-function ProjectCard() {
+function ProjectCard({title, imgSrc}) {
   return (
     <div className="p-5 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-xl">
-      <div className="w-full rounded-xl overflow-hidden">
+      <div className="w-full rounded-xl overflow-hidden bg-gray-50">
         <Image
-          src="/images/projectPic.png"
+          src={imgSrc}
           alt="image"
           width={600}
           height={600}
@@ -14,7 +14,7 @@ function ProjectCard() {
         />
       </div>
       <div className="uppercase font-semibold text-xl pt-3">
-        Lorem ipsum dolor sit consectutar
+        {title}
       </div>
     </div>
   );

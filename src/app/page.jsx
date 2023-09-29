@@ -5,6 +5,10 @@ import Navbar from "@/components/Navbar2";
 import Subscribe from "@/components/Subscribe";
 import WorkList from "@/components/WorkList";
 
+export const metadata = {
+  title: "Home - WebAgency",
+};
+
 const page = () => {
   return (
     <>
@@ -12,7 +16,6 @@ const page = () => {
       <WorkList />
       <FeaturedProject />
       <Subscribe />
-      <Footer />
     </>
   );
 };

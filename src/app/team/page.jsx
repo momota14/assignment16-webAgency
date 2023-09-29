@@ -7,6 +7,10 @@ import TeamCard from "@/components/TeamCard";
 import getTeamList from "@/lib/getTeamList";
 import React from "react";
 
+export const metadata = {
+  title: "Team - WebAgency",
+};
+
 const page = async () => {
   const teamList = await getTeamList();
   // console.log(teamList)
@@ -16,8 +20,8 @@ const page = async () => {
       <PageHeader />
       <div className="py-8">
         <PageLayout>
-        <PageTitle />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-7">
+        <PageTitle title="Our Team Member" pageDes="Check our awesome team members" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7">
           {teamList.map((team, idx) => {
             const {name, image} = team || {};
             return(
@@ -28,7 +32,6 @@ const page = async () => {
         </PageLayout>
       </div>
       <Subscribe />
-      <Footer />
     </>
   );
 };
