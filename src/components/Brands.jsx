@@ -25,13 +25,13 @@ const Brands = () => {
             alt="Picture of the author"
           />
           <Image
-            src="/images/notion.png"
+            src="/images/Notion.png"
             width={100}
             height={100}
             alt="Picture of the author"
           />
           <Image
-            src="/images/slack.png"
+            src="/images/Slack.png"
             width={100}
             height={100}
             alt="Picture of the author"

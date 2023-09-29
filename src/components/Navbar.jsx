@@ -1,7 +1,6 @@
 "use client";
 import { AiOutlineMenu } from "react-icons/ai";
 import menuList from "@/utils/menuList";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import MobileDrawer from "./MobileDrawer";
@@ -50,13 +49,8 @@ export default function Navbar() {
               }}
             >
               <h4 className="flex items-center text-xl">
-                <div className="w-[180px] bg-transparent">
-                  <Image
-                    src="/images/DesignAGENCY.png"
-                    width={500}
-                    height={500}
-                    alt="Picture of the author"
-                  />
+                <div className="text-2xl font-bold">
+                  Design<span className="text-[#F55F1D]">AGENCY</span>
                 </div>
               </h4>
             </Link>
