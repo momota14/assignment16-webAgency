@@ -11,8 +11,8 @@ export const metadata = {
   title: "Projects - WebAgency",
 };
 
-const page = async() => {
-  const projects = await getAllProjects()
+const page = async () => {
+  const projects = await getAllProjects();
   // console.log(projects)
 
   return (
@@ -21,14 +21,15 @@ const page = async() => {
       <PageHeader />
       <div className="py-8">
         <PageLayout>
-          <PageTitle  title="All Project" pageDes="Better Agency/SEO Solution At Your Fingertips"/>
+          <PageTitle
+            title="All Project"
+            pageDes="Better Agency/SEO Solution At Your Fingertips"
+          />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-7">
             {/* code..... */}
-            {projects.map((project,idx)=>{
-              const {title, image} = project || {}
-              return(
-                <ProjectCard title={title} imgSrc={image} key={idx}/>
-              )
+            {projects.map((project, idx) => {
+              const { title, image } = project || {};
+              return <ProjectCard title={title} imgSrc={image} key={idx} />;
             })}
           </div>
         </PageLayout>

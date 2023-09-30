@@ -4,7 +4,7 @@ import React from "react";
 function TestimonialsCard({name, designation, imgSrc, msg}) {
   return (
     <div className="p-7 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-xl flex flex-col items-center gap-8">
-      <div className="w-24 h-24 rounded-[16px] bg-gray-100 rounded-xl overflow-hidden">
+      <div className="w-24 h-24 bg-gray-100 rounded-xl overflow-hidden">
         <Image
           src={imgSrc}
           alt="image"

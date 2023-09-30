@@ -14,14 +14,14 @@ function ServiceCard({title, des, images}) {
         {images.map((image, idx) => {
           return(
             <div className="w-full h-[240px] bg-gray-100 overflow-hidden" key={idx}>
-          <Image
-            src={image}
-            alt="title"
-            height={500}
-            width={500}
-            className="w-full h-full object-cover"
-          />
-        </div>
+              <Image
+                src={image}
+                alt="title"
+                height={500}
+                width={500}
+                className="w-full h-full object-cover"
+              />
+            </div>
           )
         })}
         
