@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import PageLayout from "./PageLayout";
 import { BiLogoFacebook, BiLogoTwitter, BiLogoInstagram, BiLogoLinkedin } from "react-icons/bi";
